@@ -9,7 +9,7 @@
 <body>
 <div>
 <h1>여러 종류의 데이터를 보내봅시다</h1>
-<form action="receive.jsp" method = "post">
+<form action="receive.jsp" method = "get">
 <!-- 데이터를 보낼 입력 태그들.. -->
 글자 : <input type="text" name="text"><br>
 체크 : <input type="checkbox" name="check"><br>

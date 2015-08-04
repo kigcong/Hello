@@ -25,8 +25,8 @@ String check = request.getParameter("check");
 String gender = request.getParameter("gender");
 String tmp = request.getParameter("tmp");
 //데이터를 받고 나서 text를 검사하여 외부로 추방 : 유효성 검사
-if(text == null){
-	
+if(text == null||text.trim().equals("")){  //null검사와 비교검사를 함 
+	System.out.println("딱걸렸어!!");
 	response.sendRedirect("send.jsp");//send.jsp
 	return;//실행종료
 }
